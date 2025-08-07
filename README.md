@@ -185,7 +185,12 @@ void setSpeed(int newSpeed) {  // Parameter
 ```
 
 # Data Types:
+    - Size of memeory allocated
+    - The type of value memory can hold
+    - Interpretation
+
 ## Primitive Data Types: 
+
 These are fundamental, pre-defined data types built directly into the Java language. They store raw values directly in memory and have fixed sizes.
 ```
 Integers:
@@ -245,3 +250,87 @@ int hex = 0_x52;    // ❌ Wrong: underscore in 0x
 int hex2 = 0x_52;   // ❌ Wrong: underscore right after 0x
 int hex3 = 0x5_2;   // ✔️ OK
 ```
+
+# Definations 
+## Statement:
+It is a fundamental unit of execution that instructs a computer to perform a specific action.
+```
+class Test{
+    public static void main(String[] args) {
+        int a = 10, b = 20, c;
+        c = a + b;
+        System.out.print(c);
+    }
+}
+```
+
+## Tokens:  
+"token" refers to the smallest individual unit of a program that is meaningful to the compiler or interpreter.
+### Type of token
+    - Keywords
+    - Identifiers
+    - Constants/Literals
+    - Operators
+    - Punctuators/Special Symbols
+    - Expression(s)
+```
+class Test {                                            // 'class' is a keyword, 'Test' is an identifier
+    public static void main(String[] args) {            // 'public', 'static', 'void', and 'String' are keywords; 'main' and 'args' are identifiers
+        int a = 10, b = 20, c;                          // 'int' is a keyword; 'a', 'b', and 'c' are identifiers; 10 and 20 are literals (constants)
+        c = a + b;                                      // Expression: 'a + b' adds two variables and assigns to 'c'
+        System.out.print(c);                            // 'System' is a class; 'out' is a static field; 'print' is a method
+    }
+}
+```
+# Character:
+    - Memory required: 1 Byte
+    - Type of value: Interger
+    - Interpretation
+
+# Arithmatic Operators
+```
++	    Additive operator (also used for String concatenation)
+-	    Subtraction operator
+*	    Multiplication operator
+/	    Division operator
+%	    Remainder operator
+```
+
+# Unary Operators
+```
++	    Unary plus operator; indicates positive value (numbers are positive without this, however)
+-	    Unary minus operator; negates an expression
+++	    Increment operator; increments a value by 1
+--	    Decrement operator; decrements a value by 1
+!	    Logical complement operator; inverts the value of a boolean
+```
+
+# Equality and Relational Operators
+```
+==      equal to
+!=      not equal to
+>       greater than
+>=      greater than or equal to
+<       less than
+<=      less than or equal to
+```
+
+# Conditional Operators (Logical Operator)
+```
+&&      Conditional-AND                     
+||      Conditional-OR
+```
+
+# Bitwise Operators 
+```
+&       Bitwise AND
+|       Bitwise OR
+^       Bitwise XOR
+~       Bitwise Complement 
+<<      Bitwise Left Shift
+>>      Bitwise Right Shift
+```
+![alt text](image-1.png)
+
+# Operator Precedence and Associtivity
+![alt text](image.png)
